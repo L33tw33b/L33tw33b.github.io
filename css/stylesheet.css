@@ -12,6 +12,13 @@
   font-style: normal;
 }
 
+@font-face{
+  font-family: 'RM2000';
+  src: url('fonts/RM2000(Remake).ttf');
+  font-weight:normal;
+  font-style: normal;
+}
+
 .vga8 {
     font-family: 'Verite 8x16', 'IBM VGA 8x16', monospace;
     font-size: 16px;
@@ -19,9 +26,21 @@
 }
 
 body {
-  font-family: 'yume-nikki','Georgia', sans-serif;
+  font-family: 'RM2000', 'MS Mincho', monospace;
   background-color: black;
   color:white;
-  font-size: 20pt;
-  text-shadow: 5px 5px #3a364c;
+}
+
+h1 {
+  font-family: 'yume-nikki', 'Georgia', sans-serif;
+  color:#ffd0e8;
+  text-shadow: 5px 5px #583562;
+}
+
+h2{
+  background: -webkit-linear-gradient(#edb6e7, #5c3257);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(2px 2px #290831);
+  font-size: 20px;
 }
