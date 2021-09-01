@@ -14,7 +14,7 @@
 
 @font-face{
   font-family: 'RM2000';
-  src: url('fonts/RM2000(Remake).ttf');
+  src: url('fonts/RM2000_Remake_.woff');
   font-weight:normal;
   font-style: normal;
 }
@@ -26,21 +26,44 @@
 }
 
 body {
-  font-family: 'RM2000', 'MS Mincho', monospace;
+  font-family:'RM2000','MS Mincho';
   background-color: black;
   color:white;
+  text-align: center;
+
 }
 
 h1 {
   font-family: 'yume-nikki', 'Georgia', sans-serif;
-  color:#ffd0e8;
+  color:#ffffff;
   text-shadow: 5px 5px #583562;
 }
 
-h2{
-  background: -webkit-linear-gradient(#edb6e7, #5c3257);
+h2,h3{
+  background: -webkit-linear-gradient(#deb2e7, #9c619c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(2px 2px #290831);
-  font-size: 20px;
+  /*font-size: 16px;*/
+}
+
+.window-centered{
+    width: 70%;
+    max-width: 40em;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.container{
+  text-align: left;
+  margin: 0 auto;
+  border: 10px solid black;
+  width: 30%;
+  /*height: 70%;
+  top: 50%;*/
+  border-image: url(border.png) 34% round;
+
 }
