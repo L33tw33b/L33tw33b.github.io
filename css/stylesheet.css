@@ -37,6 +37,7 @@ h1 {
   font-family: 'yume-nikki', 'Georgia', sans-serif;
   color:#ffffff;
   text-shadow: 5px 5px #583562;
+  animation: fade-in .2s ease-in;
 }
 
 h2,h3{
@@ -52,7 +53,7 @@ h2,h3{
     max-width: 40em;
     margin: 0 auto;
     position: relative;
-    min-height: 100%;
+    min-width: 40em;
     height: auto;
     padding: 20px;
 }
@@ -62,8 +63,22 @@ h2,h3{
   margin: 0 auto;
   border: 10px solid black;
   width: 30%;
-  /*height: 70%;
-  top: 50%;*/
+  opacity: 0; 
   border-image: url(border.png) 34% round;
+  animation: expand .1s ease-in .5s forwards;
+  /*animation-timing-function: linear;
+  animation-delay: .5s;
+  animation-duration: .1s;
+  animation-fill-mode:forwards;*/
+}
 
+@keyframes expand {
+  from {font-size:0px;opacity:1;}
+  to {font-size:16px;opacity:1;}
+  
+}
+
+@keyframes fade-in{
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
